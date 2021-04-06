@@ -1,0 +1,261 @@
+#blocpage {
+    max-width: 90%;
+}
+/* header  */
+#topsection {
+    display: flex;
+    justify-content: space-between;
+}
+#lienpage {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+#hebergements {
+    border-top-style: solid;
+    border-width: thin;
+    color: #0065FC;
+}
+#activites , data {
+    color: #9b9b9b;
+    font-weight: 900;
+}
+#sinscrire {
+    color: #0065FC;
+    font-weight: 900;
+}
+a:visited , a:link  {
+    text-decoration: none;
+}
+#photologo {
+    padding-top: 4%;
+}
+#lienpage {
+    padding-top: 4%;
+}
+#hebergements , #activites , #sinscrire {
+    padding-top: 7%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+/* Police header  */
+#blocpage {
+    font-family: raleway
+}
+p {
+    font-size: 11px;
+}
+
+
+/*    */
+#conteneurfooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        background-color: #F2F2F2;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+ul {
+    list-style: none;
+}
+footer {
+    color:#9b9b9b ;
+    line-height: 2;
+    font-size: 12px;
+}
+a {
+    color: inherit; 
+} 
+h3  {
+    color: black;
+    font-weight: 900;
+}
+#apropose , #noshebergements , #assistance {
+
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/*   */
+h1 {
+    font-size: medium;
+    font-weight: bolder;
+}
+#rechercher {
+    background-color: blue;
+}
+
+#markusloke , #fredkleber , #anniespratt , #nicate , #zakaria , #reisetopia , #emile , #febrian , #awcreative {
+    width: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#reno , #paul , #kevin , #kilyan , #florian ,  #lena  {
+    max-width: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#parc , #vieuxport , #garde , #longchamp , #fort , #frioul {
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px #f6f6f6;
+    border-radius: 10%;
+}
+#parc , #vieuxport {
+    vertical-align: top;
+}
+
+#sectionhebergements {
+    display: flex;
+    justify-content: space-around;
+}
+#listhotel , #listhotelaside {
+    padding-right: 5%;
+}
+article  {
+    width: 70%;
+    font-size: small;
+    background-color: #F2F2F2;
+}
+
+#asidehebergement {
+    width: 30%;
+    float: right;
+    background-color: #F2F2F2;
+    margin-left: 2%;
+    justify-content: space-between;
+    padding-right: 1%;
+}
+#listhotel { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-around;
+
+}
+
+#leftside {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#asideactivites {
+    max-width: 50%;
+    margin-left: 10%;
+    float: right;
+    flex-direction: row;
+    display: block;
+    justify-items: right;
+    justify-content: space-around;
+}
+#sectionfiltres {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin-left: 0%;
+    padding-left: 0%;
+    padding-top: 2%;
+    font-weight: 900;
+    font-size: 80%;
+}
+
+#eco , #pets , #familial , #romantique , #filtre  {
+    margin-right: 2%;
+    text-transform: capitalize;
+    line-height: 2.5;
+}
+
+#eco , #pets , #familial , #romantique   {
+    border-style: solid;
+    border-width: medium;
+    border-color: #F2F2F2;
+    padding: 0%;
+    border-radius: 40px / 40px;
+    text-align: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+#chart  {
+    float: right;
+}
+
+    
+i {
+    float: left;
+}
+#sectionfiltres i {
+    border-style: solid ;
+    border-color:  #DEEBFF ;
+    border-radius: 50%;
+    border-width: 200%;
+    padding: 3%;
+    margin: 0%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 120%;
+}
+
+#cannebiere , #port , #mouettes , #panier , #amina , #mer {
+    max-width: 30%;
+    background-color: white;
+    border-radius: 10% / 10% ; 
+    box-shadow: 3px 3px 3px 3px #f6f6f6;
+    padding: 1%;
+    margin-bottom: 5%;
+    margin-right: 1%;
+}
+
+#parc , #vieuxport {
+    display: inline-block;
+    max-width: 50%;
+    
+}
+
+#gardeparc , #fortfrioul {
+    display: inline-block;
+    max-width: 50%;
+    align-items: stretch;
+}
+
+#textsoleil , #textcoeur , #texttout {
+    display: inline;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+#emile , #febrian , #awcreative {
+    float: left;
+    display: flex;
+    max-width: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 0%;
+    margin: 2%;
+    box-sizing: 100% ;
+}
+
+#soleil , #coeur , #tout {
+    margin-bottom: 5%;
+    margin-right: 1%;
+    background-color: white;
+    border-radius: 10% / 10%;
+    box-shadow: 3px 3px 3px 3px #f6f6f6;
+    margin: 10%;
+}
+
+#bluestar {
+    color: #0065FC;
+}
+#greystar {
+    color: #9b9b9b;
+
+}
