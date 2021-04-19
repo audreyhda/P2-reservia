@@ -1,0 +1,243 @@
+/* main*/
+* {
+    margin: 0;
+
+} 
+.sectionrecherche , .sectionfiltre , .sectionhotelmarseille , .sectionactivites{
+    margin-left: 6%;
+    margin-right: 6%; 
+    margin-top: 10%;
+} 
+h1 , h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h4 {
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+body{
+    max-width: 100%;
+    font-family: raleway ;
+}
+a {
+    color: inherit; 
+} 
+a:visited , a:link  {
+    text-decoration: none;
+}
+p {
+    font-size: 6px;
+}
+/* header */
+header {
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+.photologo {
+    width: 30%;
+    padding-left: 5%;
+    
+}
+header a {
+    width: 50%;
+    font-size: 250%;
+}
+.photologo {
+    font-size: 80%;
+}
+.sinscrire {
+    max-width: 70%;
+    color: #0065FC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 900;
+    padding-right: 5%;
+}
+.hebergements , .activites  {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    border-bottom:solid;
+    padding-bottom: 3%;
+}
+.activites a:active {
+   color: #0065FC;
+   border-color:#0065FC ;
+}
+.hebergements a {
+    border-bottom: black;
+}
+
+
+/* footer */
+footer {
+    background-color: #F2F2F2 ;
+    font-size: 70%;
+    line-height: 4em;
+    padding-bottom: 7%;
+    padding-left: 6%;
+    margin-right: 0;
+}
+ul {
+    list-style: none;
+}
+footer  h3{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+}
+
+/* section recherche */
+
+.section recherche form{
+    display: inline-block;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+/* section filtre  */
+.sectionfiltres {
+    margin-left: 6%;
+    margin-right: 6%; 
+    margin-top: 5%;
+
+    flex-wrap: wrap;
+
+} 
+.filtre , .select  {
+    margin-right: 2%;
+    text-transform: capitalize;
+    line-height: 2.5;
+    font-weight: 900;
+    font-size: 70%;
+}
+.seclect a:hover {
+    transform: scale(1,1);
+}
+.select  {
+    border-style: solid;
+    border-width: medium;
+    border-color: #F2F2F2;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 40px / 40px;
+    text-align: center;
+    box-sizing: content-box;
+    max-width: 50%;
+    white-space: nowrap;
+    display: inline;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+}
+.sectionfiltres i {
+    border-style: solid ;
+    border-color:  #DEEBFF ;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 0%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 120%;
+    
+}
+.data i {
+    border-style: solid ;
+    border-color:  #DEEBFF ;
+    border-radius: 50%;
+    border-width: 200%;
+    padding: 3%;
+    margin: 0%;
+    font-size: 120%;
+
+}
+/* section hotel populaire  */
+.sectionhotelpopulaire {
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+.chart {
+    width: 1000%;
+}
+
+.conteneurpopulaire {
+    width: 100%;
+    background-color: white;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px 5px #f6f6f6;
+    padding: 1%;
+    margin-bottom: 5%;
+    display: flex;
+
+}
+
+.photohotelpopulaire {
+    width: 35%;
+    height: 300px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.texthotelpopulaire {
+    max-width: 70%;
+   float: right;
+}
+
+
+
+/* section hotel marseille  */
+.photohotelmarseille {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.conteneurhotelmarseille {
+    
+}
+.conteneurmarseille {
+    background-color: white;
+    border-radius: 10% 10% 10% 10%; 
+    box-shadow: 5px 5px 5px 5px #f6f6f6;
+    margin-bottom: 10%;
+}
+
+
+/*section activites marseille  */
+
+ .sectionactivites {
+   margin-top: 10%;
+
+}
+
+ .photoactivites {
+     max-width: 100%;
+     padding-bottom: 10%;
+     width: 100%;
+     height: 450px;
+     border-top-left-radius: 10%;
+     border-top-right-radius: 10%;
+ }
+
+.conteneuractivitesmarseille {
+  
+}
+.conteneuractivites {
+    background-color: white;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px 5px #f6f6f6;
+    margin-bottom: 10%;
+    
+}
+
