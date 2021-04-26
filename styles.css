@@ -1,58 +1,55 @@
-/* main*/
+/* partie principale*/
 * {
     margin: 0;
-
 } 
-.liensnav {
-    display: flex;
-}
-
 .sectionrecherche , .sectionfiltres , .sectionhotelmarseille , .sectionactivites{
-    margin-left: 6%;
-    margin-right: 6%; 
-    margin-top: 10%;
+    margin: 5%;
 } 
-a{
-    font-size: 150%;
-}
-h1 , h2 {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 
-h3 , h4 {
-    font-weight: 900;
-    font-size: 140%;
-}
 body{
     display: inline-block;
     width: 100%;
     font-family: raleway ;
-    font-size: 100%;
+    font-size: 70%;
     line-height: 2em;
+}
+h1 , h2 , h4 , p , .staricones {
+    margin-bottom: 5%;
+    margin-left: 3%; margin-right: 5%;
+}
+h1 , h2 , h3 , h4 {
+    font-size: 180%;
+}
+p {
+    font-size: 120%;
 }
 a {
     color: inherit; 
+    font-size: 120%;
 } 
 a:visited , a:link  {
     text-decoration: none;
 }
-
+.staricones {
+    display: flex;
+    justify-content: flex-start;
+}
+.stariconesblue  {
+    color: #0065FC;
+}
+.stariconesgrey {
+    color: #F2F2F2;
+}
 /* header */
 .headerdiv {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;  
 }
 .photologo {
     margin-left: 5%;
-    font-size: 100%;  
     width: 30%; 
-}
-.headerdiv {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;   
 }
 .sinscrire { 
     width: 30%;
@@ -60,43 +57,44 @@ a:visited , a:link  {
     color: #0065FC;
     display: flex;
     justify-content: flex-end;
-    justify-items: center;
-    align-items: center;
     font-weight: 900;
-    padding: 30px 0px 30px 0px ;
+    padding: 5% 5% 5% 0% ;
 }
-.liensnav {
+.liensnav {
     display: flex;
-    flex-wrap: wrap;
-    width: 200%;
+    width: 100%;
     justify-content: space-between;
 }
+.liensnav a:hover, .liensnav a:active {
+    color: #0065FC;
+    border-color: #0065FC;
+}
 .hebergements , .activites  {  
+    display: flex;
+    justify-content: center;
     width: 50%;
-    align-items: center;
     margin-top: 7%;
     border-bottom:solid;
     border-color: #F2F2F2;
     padding-bottom: 3%;
     margin:0;
     padding: 4%;
+
 }
-.activites a:active {
+
+.activites a:active , .activites a:hover, .hebergements a:active , .hebergements a:hover {
    color: #0065FC;
    border-color:#0065FC ;
 }
-.hebergements a {
-    border-bottom: black;
-}
-
 
 /* footer */
 footer {
     background-color: #F2F2F2 ;
     font-size: 70%;
     padding-bottom: 7%;
-    padding-left: 6%;
     margin-right: 0;
+    line-height: 2.2em;
+    font-size: 95%;
 }
 ul {
     list-style: none;
@@ -104,7 +102,7 @@ ul {
 footer  h3{
     padding-top: 7%;
     padding-bottom: 5%;
-    margin-top: 10%;
+    font-size: 130%;
 }
 
 /* section recherche */
@@ -115,11 +113,17 @@ footer  h3{
     font-size: 250%;
     width: 100%; 
     height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .sectionrecherche input {
     border: solid;
     border-color: #F2F2F2;
     width: 90%;
+    height: 70%;
+    font-size: 60%;
+    font-weight: 700;
+    padding: 2%;
 }
 
 .sectionrecherche i {
@@ -129,8 +133,10 @@ footer  h3{
     font-size: 180%;
     align-items: center;
 }
+
 .locate {
     border:solid;
+    border-width: 0.3em;
     border-color: #F2F2F2;
     background-color: #F2F2F2;
     border-top-left-radius: 30%;
@@ -138,10 +144,12 @@ footer  h3{
     justify-content: center;
     align-items: center;
     align-self: center;
-    padding: 2%;
+    padding: 1%;
 }
 .search {
+    display:flex;
     border:solid;
+    border-width: 0.2em;
     border-color: #0065FC;
     background-color:#0065FC;
     border-top-right-radius: 30%;
@@ -149,155 +157,188 @@ footer  h3{
     justify-content: center;
     align-items: center;
     align-self: center;
-    padding: 2%;
+    padding: 1%;
+    margin-right: 5%;
 }
 .search i {
     color: white;
+    background-color:#0065FC;
+    font-size: 50%;
+}
+button span {
+    display: none;
+}
+.rechercher {
+    display:inline;
+    width: 1%;
+    height: 1%;
+    font-size:1%;
 }
 
-.sectionrecherche p {
+.info  {
+    width: 100%;
     margin-bottom: 5%;
     padding-left: 0;
 }
 
 .sectionrecherche h1 {
-    padding-top: 5%;
+    margin-top: 8%;
+    margin-bottom: 1%;
     font-weight: 900;
+    font-size: 140%;
 }
-
 
 /* section filtre  */
 .sectionfiltres {
-    margin-left: 6%;
-    margin-right: 6%; 
-    margin-top: 5%;
-    display: block;
+    display: flex;
     flex-wrap: wrap;
 } 
+.sectionfiltres h2 {
+    width: 100%;
+    font-size: 150%;
+}
 .info {
     display: flex;
     align-items: center;
 }
-
 .filtre , .select  {
     margin-right: 2%;
     text-transform: capitalize;
     line-height: 2.5;
     font-weight: 900;
+
 }
-.seclect a:hover {
-    transform: scale(1,1);
+.select:hover  {
+    background-color: #0065FC;
+    color: #F2F2F2;
+}
+.sectionfiltres .select:hover{
+    transform: scale(1,1) rotate (10deg);
 }
 .select  {
+    display: flex;
     border-style: solid;
     border-width: medium;
     border-color: #F2F2F2;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 3%;
-    border-radius: 40px / 40px;
-    text-align: center;
-    box-sizing: content-box;
-    max-width: 50%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    padding-right: 7%;
+    border-radius: 70px / 70px;
     white-space: nowrap;
-    display: inline;
-    margin-bottom: 5%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    font-size: 110%;
 
 }
 .select i {
     border-style: solid ;
     border-color:  #DEEBFF ;
     border-radius: 50%;
-    padding: 3%;
-    margin: 0%;
-    margin-top: 10%;
+    padding: 12px;
     color: #0065FC;
     background-color: #DEEBFF;
     background-origin: border-box;
-    font-size: 120%;
+    margin-right: 10%;
+    font-size: 130%;
+}
+
+.info {
+    margin-top: 5%;
+    align-items: flex-start;
 
 }
 .info i {
     border-style: solid ;
-    background-color: none;
     border-color:  #F2F2F2;
     border-radius: 50%;
-    padding: 2%;
-    margin: 0%;
-    color: #0065FC;
-}
-.data i {
-    border-style: solid ;
-    border-color:  #DEEBFF ;
-    border-radius: 50%;
-    border-width: 200%;
     padding: 3%;
-    margin: 0%;
-    font-size: 120%;
-
+    color: #0065FC;
+    font-size: 80%;
 }
+.info p { 
+    margin-left: 2%;
+}
+
+
 /* section hotel populaire  */
+
 .sectionhotelpopulaire {
     display: block;
     justify-content: center;
     background-color: #F2F2F2;
     width: 90%;
-    margin-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-    padding-top: 5%;
-
+    padding-top: 7%;
 }
-.chart {
-    
-}
-
-.conteneurpopulaire {
+.sectionhotelpopulaire h1 {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 90%;
+    justify-content: space-between;
+}
+.sectionhotelpopulaire i {
+    padding-top: 2%;
+}
+.conteneurpopulaire {
+    display: flex; 
     background-color: white;
-    border-radius: 10%; 
-    box-shadow: 5px 5px 5px 5px #f6f6f6;
+    border-radius: 10% 10% 10% 10%;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
     margin-bottom: 5%;
-    padding: 2%;
-    padding-right: 2%;
+    padding: 2%;   
 }
 
 .photohotelpopulaire {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
-    margin-right: 2%;
-    padding-right: 2%;
     object-fit: cover;
 }
 .conteneurpopulaire .texthotel {
-    max-width: 50%;
-    height: 100%;
     float: right;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin-left: 7%;
+    align-content: space-between;
+    margin-left: 5%;
+    
 }
-.conteneurpopulaire h4 , .conteneurpopulaire p {
+.conteneurpopulaire h4 , .conteneurhotelmarseille h4 , .conteneurpopulaire p , .conteneurhotelmarseille p{
     width: 100%;
-}
-.staricones {
-    height: 40%;
-    margin-top: 7%;
+    font-size: 100%;
+ 
 }
 
+.texthotel h4 , .texthotel p {
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.staricones {
+    width: 100%;
+    font-size: 70%;
+    margin-bottom: 0;
+}
 
 
 
 /* section hotel marseille  */
+.conteneurmarseille {
+    display: block;
+    background-color: white;
+    border-radius: 10% 10% 10% 10%; 
+    box-shadow: 5px 5px 5px 5px #f6f6f6;
+    margin-bottom: 5%;
+    padding: 2%;
+    justify-content: space-between;
+    
+}
+.conteneurmarseille .texthotel {
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
 .photohotelmarseille {
     width: 100%;
     height: 150px;
@@ -306,19 +347,14 @@ footer  h3{
     object-fit: cover;
 }
 
-.conteneurmarseille {
-    background-color: white;
-    border-radius: 10% 10% 10% 10%; 
-    box-shadow: 5px 5px 5px 5px #f6f6f6;
-    margin-bottom: 10%;
-    padding: 2%;
-}
+
 
 
 /*section activites marseille  */
 
  .sectionactivites {
    margin-top: 10%;
+   padding-top: 5%;
 
 }
 
@@ -332,240 +368,414 @@ footer  h3{
      object-fit: cover;
  }
 
-.conteneuractivitesmarseille {
-  
-}
-.conteneuractivites {
 
+.conteneuractivites {
+    display: block;
     background-color: white;
     border-radius: 10%; 
     box-shadow: 5px 5px 5px 5px #f6f6f6;
     margin-bottom: 10%;
-    
 }
+.sectionactivites h4 {
+    font-size: 90%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+}
+
 
 
 /* Media queries tablettes */
 
 @media only screen and (min-width: 768px) {
-h1, h2, h3, h4 , p , a {
-    font-size: 100%;
-}
-.header {
-    font-size: 40%;
-    display: flex;
-}
-.headerdiv {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-    align-items: center;
-}
-.liensnav {
-    width: 50%;
-    display: inline;
-    order: 2;
-    align-content: flex-end;
-}
-.photologo {
-    order: 1;
-    float: left;
-    margin: 0;
-}
-.hebergements {
-    display: inline;
-    font-size: 100%;
-    border-bottom: none;
-    width: 10%;
-    padding: 0;
-    padding-right: 2%;
-    margin: none;
-}
-.activites {
-    display: inline;
-    border-bottom: none;
-    font-size: 100%;
-    width: 10%;
-    padding: 0;
-    
-    padding-left: 10%;
-    margin: none;
-}
-.sinscrire {
-    order:3;
-    font-size: 100%;
-    width: 10%;
-    justify-content: center;
-    align-items: center; 
-    padding: 0;  
-}
 
-.sectionrecherche form {
-    width: 50%;
-    font-size: 150%;
-}
-.sectionrecherche {
-    margin: 0;
-}
-.sectionfiltres {
-    flex-wrap: nowrap;
-}
-.select  {
-    flex-grow: 1;
-}
-.sectionfiltres select {
-    width: auto;
-}
-.conteneurfooter {
-    display: flex;
-    align-items: baseline;  
-}
-.footertext {
-    margin-right: 12%;
-    line-height: 2em;
-}
-.sectionhotelpopulaire , .sectionhotelmarseille  , .sectionactivites {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.conteneurpopulaire {
-    display: block;
-    padding : 1%;
-}
-.photohotelpopulaire {
-    width: 100%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 0%;
-}
-.texthotelpopulaire {
-    float: none;
-}
-.conteneurpopulaire , .conteneurmarseille , .bigphoto , .smallphoto {
-    width: 25%;
-    margin-right: 3%;
-}
-.sectionhotelpopulaire h1 {
-    width: 100%;
-}
-.conteneurhotelmarseille {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.conteneurmarseille {
-    margin-left: none;
-}
-.conteneuractivitesmarseille  {
-    display: flex;
-    flex-wrap: wrap;
-}
-.bigphoto  {
-    width: 45%;
-}
-.bigphoto .conteneuractivites{
-    height: 100%;
-}
-.bigphoto .photoactivites {
-    height: 395px;
-    padding-bottom: 0;
-}
-.conteneursmallphoto  {
-    width: 45%;    
-    justify-content: right;
-}
-.smallphoto  {
-    width: 100%;
-}
-.conteneuractivites {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-right: 0
-}
-.photoactivites {
-   max-width: 100%;
-}
-}
-/* Media queries desktop  */
-
-@media only screen and (min-width: 992px) {
-.main {
+    header , main {
+        font-size: 160%;
+    }
+    h1 , h2 , h4 , p , .staricones {
+     
+        margin-right: 0;
+    }
+    .header {
+        font-size: 40%;
         display: flex;
+        margin: 3%;
     }
-.sectionfiltres {
-        display: inline;
-        margin-top: 0%;
-        
-    }
-.sectionfiltres h2 {
-        width: 10%;
-        margin-top: 0%;
-    }
-.desktopaside {
+    .headerdiv {
         display: flex;
-        
+        flex-wrap: wrap;
+        text-align: right;
+        align-items: center;
     }
-.sectionhotelmarseille{
-        width:70%;
-        float: left;
+    .photologo {
         order: 1;
+        float: left;
         margin: 0;
     }
-.sectionhotelmarseille h1 , .sectionhotelpopulaire h1 {
-        margin:0 ;
-        padding-bottom: 10%;
+    .sinscrire {
+        order:3;
+        font-size: 100%;
+        width: 10%;
+        justify-content: center;
+        align-items: center; 
+        padding: 0;  
     }
-.sectionhotelpopulaire {
-       
-        width: 30%;
-
-        float: right;
+    .liensnav {
+        width: 50%;
+        display: inline;
         order: 2;
-        margin-top: 0;
+        align-content: flex-end;
+    }
+    .info {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+    .info p {
+        margin: 0;
+    }
+    .conteneurpopulaire {
+       padding: 5%;
+    }
+    .hebergements , .activites {
+        display: inline;
+        font-size: 100%;
+        border-bottom: none;
+        width: 10%;
         padding: 0;
+        margin: none;
     }
-.conteneurpopulaire {
-    margin: 0;
-    width: 100%;
-    height: 25%;
-}
-.photohotelpopulaire {
-    width: 30%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 0%;
-}
-.conteneurpopulaire .texthotel {
-    float: right;
-    height: auto;
-}
-.desktopaside {
-        display: flex;
+    .activites {
+        padding-left: 10%;
     }
-.sectionhotelmarseille {
-        order:1;
+    .hebergements {
+        padding-right: 2%;
     }
-.sectionhotelpopulaire {
-        order: 2;
+    .hebergements a:hover , .activites a:hover , .hebergements a:active , .activites a:active {
+        border-top: #0065FC;
+        border-top:solid;
+        font-weight: 900;
     }
-
-.conteneuractivitesmarseille {
-        display: flex;
-        flex-wrap: nowrap;
+    .sectionrecherche {
+        margin: 0;
     }
-.bigphoto {
-        width: 20%;
-        height: 100%;
+    .sectionrecherche form {
+        margin: 0%;
+        width:40%;
+        margin-bottom: 3%;
+    }
+   
+    .rechercher {
+        display: inline;
+        font-size: 60%;
+        color: white;
+     }
+    .sectionrecherche input {
+        font-size: 60%;
+    }
+    .select  {
+        justify-content: space-between;
+        width: auto;
+        font-size: 150%;
+    }
+    .sectionfiltres {
+        margin:0;
+    }
+    .sectionfiltres i {
+        padding: 1%;
+    }
+    .sectionfiltres h2, .sectionrecherche p , .sectionrecherche h1 {
+        margin-left:0;
+    }
+    header , .sectionfiltres , .sectionrecherche {
+        margin-left: 3%;
         margin-right: 3%;
-    } 
-.conteneursmallphoto {
-        width: 20%;
-        height: 50%;   
-        margin-right: 3%;   
     }
-
+   
+    
+    .sectionhotelpopulaire , .sectionhotelmarseille  , .sectionactivites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    
+    .conteneurpopulaire , .conteneurmarseille , .bigphoto , .smallphoto {
+        width: 30%;
+        display: block;
+        padding : 1%;
+        margin-right: 0;
+    }
+    
+    .sectionhotelpopulaire h1 , .sectionhotelmarseille h1 {
+        width: 100%;
+        margin: 0;
+        margin-top: 2%;
+    }
+    .photohotelpopulaire , .photohotelmarseille {
+        width: 100%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 0%;
+    }
+    .conteneurpopulaire .texthotel {
+        max-width: 100%;
+        float: none;
+        margin: 0 ;
+        
+    }
+    .sectionhotelmarseille h4 {
+        width: 100%;
+    }
+    .conteneurmarseille {
+        padding: 1%;
+    }
+    .conteneurhotelmarseille {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: none;
+    }
+    .sectionhotelmarseille h4 , .sectionhotelpopulaire h4 {
+        font-size: 120%;
+    }
+    .sectionactivites {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .conteneuractivitesmarseille  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bigphoto  {
+        width: 45%;
+        height:50%;
+    }
+    
+    .bigphoto h4 {
+        margin-bottom: 0;
+        width: 100%;
+        height: 10%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    
+    }
+    .bigphoto .conteneuractivites {
+        height:100%;
+    }
+    .bigphoto .photoactivites {
+        height: 85%;
+        padding-bottom: 0;
+    }
+    .bigphoto , .conteneursmallphoto {
+        margin-bottom: 5%;
+    }
+    .conteneursmallphoto  {
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        justify-content: space-between;
+        margin-left: 5%;
+    }
+    .conteneursmallphoto .conteneuractivites {
+        margin-bottom: 5%;
+    }
+    .smallphoto  {
+        height: auto;
+        width: 95%;
+       
+    }
+    .conteneuractivites {
+        display: block;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 0;
+    
+        margin-right: 0
+    }
+    .photoactivites {
+       max-width: 100%;
+    }
+    
+    .conteneurfooter {
+        display: flex;
+        align-items: baseline;  
+        white-space: nowrap;
+        font-size: 80%;
+        margin-top: 15%;
+        padding-top: 3%;
+        
+    }
+    .footertext {
+        margin-right: 8%;
+        line-height: 2em;
+    }
 }
 
+    /* Media queries desktop  */
+    
+@media only screen and (min-width: 992px) {
+    
+    .main {
+            display: flex;
+    
+     }
+      h1 , h2 , h4 , p , .staricones {
+        margin-bottom: 5%;
+        margin-left: 3%; margin-right: 5%;
+    }
+    header   {
+        font-size: 200%;
+    
+    }
+    
+    .sectionrecherche form {
+        margin: 0%;
+        width:50%;
+        margin-bottom: 3%;
+    }
+    .search {
+        display: flex;
+    }
+    
+    .search i {
+     display: none;
+    }
+    button span  {
+        display: block;
+        color: white;
+
+    }
+    
+    .sectionfiltres {
+        font-size: 100%;
+        align-items: center;  
+    }
+    .sectionfiltres h2 {
+            width: auto;
+            font-size: 90%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+            margin-right: 1%;
+     }
+     .select {
+         margin-right: 2%;
+         margin-bottom: 0%;
+        padding-right: 3%;
+        font-size: 110%;
+     }
+     .info {
+         margin-top: 2%;
+         margin-bottom: 2%;
+     }
+     .info i {
+         padding:1%;
+     }
+     .info p {
+         font-size: 90%;
+     }
+    .desktopaside {
+            display: flex;    
+    }
+    .texthotel {
+        font-size: 70%;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+    .sectionhotelmarseille{
+            width:65%;
+            float: left;
+            order: 1;
+            background-color: #F2F2F2;
+            margin: 0;
+            border-radius: 30px;
+            margin-right: 1%;
+            padding-right: 2%;
+    }
+    
+    .sectionhotelmarseille h1 , .sectionhotelpopulaire h1 {
+            margin-top: 5%;
+            font-size: 150%;
+    
+            
+        }
+    .sectionhotelpopulaire {
+           
+            width: 35%;
+            justify-content: unset;
+            float: right;
+            order: 2;
+            margin-top: 0;
+            padding: 0;
+            border-radius: 30px;
+    }
+    .sectionhotelpopulaire i {
+        
+        padding:0;
+         
+    }
+    .conteneurpopulaire {
+        display: flex;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 100%;
+        height: 25%;
+    
+    }
+    .photohotelpopulaire {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10%;
+        
+    }
+    .conteneurpopulaire .texthotel {
+        float: right;
+        height: auto;
+    
+    }
+    .desktopaside {
+            display: flex;
+    }
+    .sectionhotelpopulaire {
+            order: 2;
+    }
+    .sectionhotelmarseille h4 {
+        font-size: 90%;
+        margin-left: 20%;
+    }
+    .conteneurhotelmarseille {
+        padding-left: 3%;
+    }
+    .conteneuractivitesmarseille {
+            display: flex;
+            flex-wrap: nowrap;
+    }
+    .conteneuractivites {
+        display: block;
+    }
+    .bigphoto {
+    
+            width: 25%;
+            height: 100%;
+            margin-right: 3%;
+            padding:0;
+    } 
+    .bigphoto .conteneuractivites {
+        height:100%;
+    } 
+    .conteneursmallphoto {
+        justify-content: space-between;
+            width: 25%;
+            height: 100%;   
+            margin:0; 
+            margin-bottom: 3%;
+    }
+    .footertext {
+        margin-right: 15%;
+    }
+    
+}
+    
 
 
 /*  */
