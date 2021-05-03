@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <title>Site Reservia</title>
     </head>
 
@@ -35,13 +35,10 @@
                         <div class="locate">
                         <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <input  type="search"/>
+                        <input  type="search" value="Marseille, France"/>
 
-                        <button class="search" type="submit" value=" ">
-                            <i class="fas fa-search"></i><span>Rechercher</span></button>
-             
-
-                              
+                        <button class="search" type="submit" >
+                            <i class="fas fa-search"></i><span>Rechercher</span></button>                            
                     </form>
             </section>
 
@@ -71,15 +68,15 @@
         
         <section class="desktopaside">
             <section class="sectionhotelpopulaire">
-            <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
+            <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
 
                 <a class="conteneurpopulaire" href="">
-                    <picture>
-                        <source class="photohotelpopulaire" media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    <picture class="photohotelpopulaire" >
+                        <source  media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 
-                        <source class="photohotelpopulaire" media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                        <source media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
 
-                        <img class="photohotelpopulaire" src="P2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin" >
+                        <img  src="P2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin" >
                       </picture>
 
                     <div class="texthotel">
@@ -101,10 +98,10 @@
 
                 <a class="conteneurpopulaire" href="">
 
-                    <picture>
-                        <source class="photohotelpopulaire" media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                        <source class="photohotelpopulaire" media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                        <img class="photohotelpopulaire" src="P2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambres d'hôtes Au coeur de l'eau">
+                    <picture class="photohotelpopulaire" >
+                        <source media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                        <source  media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                        <img  src="P2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambres d'hôtes Au coeur de l'eau">
                       </picture>
                     
                     <div class="texthotel">
@@ -128,10 +125,10 @@
 
                 <a class="conteneurpopulaire" href="">
                     
-                    <picture>
-                        <source class="photohotelpopulaire" media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                        <source class="photohotelpopulaire" media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                        <img class="photohotelpopulaire" src="P2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
+                    <picture class="photohotelpopulaire">
+                        <source  media="(min-width:768px)" srcset="P2-Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                        <source  media="(min-width:992px)" srcset="P2-Reservia/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                        <img  src="P2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
                     </picture>
 
                     <div class="texthotel">
@@ -158,8 +155,8 @@
 
 
         
-            <section class="sectionhotelmarseille">
-                <h1>Hébergements à Marseille</h1>
+            <section id="sectionhotelmarseille">
+                <h2>Hébergements à Marseille</h2>
                         
                         <div class="conteneurhotelmarseille">
                             
@@ -320,12 +317,12 @@
                                 </div>  
                             </a>
                         </div>
-                        <a><h4>Afficher plus</h4></a>
+                        <a><h5>Afficher plus<h5></a>
             </section>
         </section>
 
-            <section class="sectionactivites">
-                <h1>Activités à Marseille</h1>
+            <section id="sectionactivites">
+                <h2>Activités à Marseille</h2>
 
                     <div class="conteneuractivitesmarseille">
 
