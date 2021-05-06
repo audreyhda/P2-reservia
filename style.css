@@ -8,7 +8,7 @@
 body{
     display: inline-block;
     font-family: raleway ;
-    font-size: 80%;
+    font-size: 14px;
     margin-top: 2%;
 }
 h1 , h2 , h4 , p , .staricones {
@@ -17,11 +17,11 @@ h1 , h2 , h4 , p , .staricones {
     margin-right: 5%;
 }
 p {
-    font-size: 120%;
+    font-size: 16px;
 }
 a {
     color: inherit; 
-    font-size: 120%;
+    font-size: 15px;
 } 
 a:visited , a:link  {
     text-decoration: none;
@@ -54,7 +54,7 @@ a:visited , a:link  {
     color: #0065FC;
     font-weight: bold;
     padding: 5% 5% 5% 0% ;
-    font-size: 130%;
+    font-size: 15px;
 }
 .liensnav {
     width: 100%;
@@ -74,6 +74,12 @@ a:visited , a:link  {
 }
 
 /* section recherche */
+.sectionrecherche h1 {
+    margin-top: 8%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 22px;
+}
 .sectionrecherche form{
     display: flex;
     align-content: space-between;
@@ -85,11 +91,8 @@ a:visited , a:link  {
     border-color: #F2F2F2;
     padding-left: 5%;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 18px;
     position: static;
-}
-.sectionrecherche button i {
-    font-size: 130%;
 }
 .locate {
     border:solid;
@@ -98,13 +101,11 @@ a:visited , a:link  {
     background-color: #F2F2F2;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
-    padding: 5%;
-    font-size: 100%;
+    padding: 4%;
     position: relative;  
 }
-
 .locate i {
-    font-size: 160%;
+    font-size: 18px;
 }
 .search {
     border:solid;
@@ -112,14 +113,14 @@ a:visited , a:link  {
     border-color: #0065FC;
     background-color:#0065FC;
     border-radius: 30%;
-    padding: 5%;
+    padding: 4%;
     margin-right: 5%;
     position: relative;  
-    top: 1px; left: -35px;
+    top: 1px; left: -10px;
 }
 .search i {
-    color: white;
-    background-color:#0065FC;
+    font-size: 18px;
+    color: white;    
 }
 button span {
     display: none;
@@ -129,12 +130,6 @@ button span {
     padding-left: 0;
     margin-bottom: 5%;
 }
-.sectionrecherche h1 {
-    margin-top: 8%;
-    margin-bottom: 3%;
-    font-weight: bold;
-    font-size: 170%;
-}
 
 /* section filtres */
 .sectionfiltres {
@@ -143,7 +138,7 @@ button span {
 } 
 .sectionfiltres h2 {
     width: 100%;
-    font-size: 150%;
+    font-size: 18px;
 }
 .info {
     display: flex;
@@ -171,31 +166,39 @@ button span {
     white-space: nowrap;
     padding-right: 5%;
     margin-bottom: 4%;
-    margin-right: 5%;
-    font-size: 130%;
+    margin-right: 7%;
+    font-size: 15px;
 }
 .select i {
     color: #0065FC;
+    position: relative;
+    right: 2;
     background-color: #DEEBFF;
     background-origin: border-box;
     border-style: solid ;
     border-color:  #DEEBFF ;
     border-radius: 50%;
-    padding: 10px;
-    margin-right: 5%;
-    font-size: 130%;
+    padding: 8px;
+    margin-right: 10%;
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 .info i {
+    align-self: flex-start;
     color: #0065FC;
     border-style: solid ;
     border-color:  #F2F2F2;
     border-radius: 50%;
-    padding: 2%;
-    font-size: 80%;
+    padding: 8px;
+    font-size: 12px;
 }
 .info p { 
-    margin-left: 2%;
+    margin-left: 3%;
     margin-right: 0%;
+    margin-top: 2%;
 }
 
 /* section hotel populaire  */
@@ -235,22 +238,22 @@ button span {
     display: flex;
     justify-content: space-between;
     margin : 0% 5% 7% 5%;
-    font-size: 170%;
+    font-size: 22px;
 }
 .texthotel h4  {
     line-height: 1em;
     margin-bottom: 0;
-    font-size: 100%;
+    font-size: 16px;
 }
 .texthotel p {
     line-height: 1.5em;
     margin-bottom: 0;
     margin-top: 2%;
-    font-size: 90%;
+    font-size: 14px;
 }
 .staricones {
     width: 100%;
-    font-size: 70%;
+    font-size: 12px;
 }
 
 /* section hotel marseille  */
@@ -277,8 +280,7 @@ button span {
     margin-left: 0%;
     margin-top: 10%;
     margin-bottom: 7%;
-    font-size: 170%;
-    
+    font-size: 22px; 
 }
 .conteneurmarseille h4 {
     margin-top: 2%;
@@ -292,7 +294,6 @@ button span {
     margin-bottom: 1%;
     margin-top: 2%;
 }
-
 
 /*section activites marseille  */
  #sectionactivites {
@@ -312,13 +313,13 @@ button span {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding-bottom: 3%;
 }
 #sectionactivites h2 {
     margin-bottom: 7%;
-    font-size: 170%;
+    margin-left: 0%;
+    font-size: 22px;
 }
-#sectionactivites h4 {
+.bigphoto h4 , .smallphoto h4 {
     padding-bottom: 5%;
     padding-left: 2%;
     margin-top: 3%;
@@ -337,7 +338,7 @@ ul {
 footer  h3{
     padding-top: 7%;
     padding-bottom: 5%;
-    font-size: 140%;
+    font-size: 18px;
 }
 
 /*             MEDIA QUERIES TABLETTES MIN WIDTH 768 PX */
@@ -363,14 +364,13 @@ footer  h3{
     .header {
         display: flex;
         margin: 3%;
-        font-size: 40%;
     }
     .headerdiv {
         display: flex;
         flex-wrap: wrap;
         text-align: right;
         align-items: center;
-        margin-bottom: 10%;
+        margin-bottom: 0;
     }
     .photologo {
         order: 1;
@@ -383,7 +383,7 @@ footer  h3{
         align-content: flex-end;
         justify-items: center;
         width: 50%;
-        font-size: 120%;
+        font-size: 18px;
     }
     .liensnav a:hover, .liensnav a:active {
         color: #0065FC;
@@ -396,7 +396,7 @@ footer  h3{
         width: 10%;
         justify-content: center;
         align-items: center; 
-        font-size: 120%;
+        font-size: 18px;
         padding: 0;  
     }
     .hebergements , .activites {
@@ -404,23 +404,20 @@ footer  h3{
         display: inline;
         border-bottom: none;
         padding: 0;
-        padding-left: 2%;
         padding-right: 2%;
+        padding-left: 2%;
         padding-top: 4%;
         margin: 0;
         margin-left: 5%;
-        font-size: 100%;
+        font-size: 18px;
     }
     .hebergements a:hover , .activites a:hover , .hebergements a:active , .activites a:active {
         border-top: #0065FC;
         border-top:solid;
-        font-weight: 900;
+        font-weight: bold;
     }
 
  /* Media queries tablettes section recherche */
-    .sectionrecherche {
-        margin-bottom:  5%;
-    }
     h1 {
         line-height: 1em;
     }
@@ -429,26 +426,38 @@ footer  h3{
         margin: 0%;
         margin-bottom: 3%;
     }
-    .sectionrecherche input {
-        font-size: 100%;
-    }
     .locate {
-        padding: 2%;
-        font-size: 170%;
+        font-size: 18px;
+    }
+    .search {
+        border-radius: 0% 15% 15% 0%;
+        font-weight: bold;
+        padding: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
+        left:0;
+    } 
+    .search i {
+        display: none;
+    }
+    button span  {
+        display: block;
+        color: white;
     }
 
  /* Media queries tablettes section filtres */
     .sectionfiltres h2, .sectionrecherche p , .sectionrecherche h1{
         margin-left:0;
-        margin-top: 2%;
     }
     .select  {
         justify-content: space-between;
         margin-right: 10%;
-        padding-right: 8%;
+        padding-right: 6%;
+        font-size: 18px;
     }
     .select i {
-        padding: 5%;
+        padding: 12px;
+        font-size: 20px;
     }
     .info {
         width: 100%;
@@ -465,21 +474,21 @@ footer  h3{
 
 /* Media queries tablettes section hebergement */
 
-    .sectionhotelpopulaire , .sectionhotelmarseille  , #sectionactivites {
+    .sectionhotelpopulaire , #sectionhotelmarseille  , #sectionactivites {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 5%;
         padding: 3%;
     }   
-    .sectionhotelmarseille {
+    #sectionhotelmarseille {
         margin: 0;
     }
-    .conteneurpopulaire {
-        padding: 5%;
+    .conteneurpopulaire , .conteneurmarseille{
+        padding: 0.5%;
     }
     .conteneurmarseille {
-        padding: 1%;
+        padding: 0.5%;
     }    
     .conteneurhotelmarseille {
         display: flex;
@@ -489,34 +498,30 @@ footer  h3{
     .conteneurpopulaire , .conteneurmarseille , .bigphoto , .smallphoto {
         width: 28%;
         display: block;
-        padding : 1%;
         margin-right: 1%;
         margin-left: 1%;
     }   
-    .sectionhotelpopulaire h2 , .sectionhotelmarseille h2 {
+    .sectionhotelpopulaire h2 , #sectionhotelmarseille h2 {
         width: 100%;
         margin: 0;
         margin-top: 2%;
         margin-bottom: 5%;
-        font-size: 150%;
+        font-size: 22px;
     }
-    .sectionhotelmarseille h4 {
+    #sectionhotelmarseille h4 {
         width: 100%;
-        font-size: 100%;
     }
     .conteneurpopulaire img {
         width: 100%;
-    }
-    picture img  , .photohotelmarseille {
-        width: 100%;
-        border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
     }
-    .conteneurpopulaire .texthotel {
+    .texthotel {
         margin: 0 ;    
+        padding: 5% 5% 2% 5%;
     }
     .conteneurhotelmarseille .texthotel, .sectionhotelpopulaire .texthotel{
-        font-size: 80%;
+        font-size: 10px;
     }
 
 /* Media queries tablettes section activites */
@@ -524,7 +529,6 @@ footer  h3{
         width: 100%;
         display: block;
         flex-wrap: wrap;
-        padding-left: 5%;
         margin-bottom: 0;
         margin-right: 0
     }
@@ -533,11 +537,13 @@ footer  h3{
         flex-wrap: wrap;
     } 
     #sectionactivites {
+        padding: 3%;
+        margin-top: 0;
         margin-right: 0;
         margin-left: 0;
     }
     .bigphoto  {
-        width: 47%;
+        width: 48%;
         height:50%;
     }
     .bigphoto .conteneuractivites {
@@ -547,40 +553,49 @@ footer  h3{
         margin-bottom: 3%;
     }
     .conteneursmallphoto  {
-        width: 43%;
+        width: 48%;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        margin-left: 6%;
+        margin-left: 2%;
     }
     .smallphoto  {
         width: 95%;  
     }
     #sectionactivites h2 {
-        font-size: 150%;
+        font-size: 22px;
     }  
     .bigphoto h4 {
-        width: 100%;
-        height: 10%;
-        padding-top: 3%;
-        padding-bottom: 1%;
-        margin-bottom: 0;
+        padding-bottom: 0%;
+    }
+    .bigphoto h4 , .smallphoto h4 {
+        font-size: 20px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .photoactivites {
+        padding-bottom: 2%;
     }
     .bigphoto .photoactivites {
-        height: 85%;
-        padding-bottom: 0;
+        height: 350px;
     }
 
+
 /* Media queries tablettes footer*/
+    footer {
+        padding-bottom: 5%;
+        margin-top: 10%;
+    }
     .conteneurfooter {
         display: flex;
         align-items: baseline;  
-        padding-top: 3%;
+        padding-bottom: 0;
         white-space: nowrap;
         font-size: 80%;
     }
     .footertext {
         line-height: 2em;
+        margin-right: 10%;
     }
 }
 
@@ -589,10 +604,7 @@ footer  h3{
 
 /* Media queries desktop main  */
     body {
-    margin: 5%;
-    }
-    header , main {
-        font-size: 100%;
+    margin: 3%;
     }
     h2 , h4 , p {
         margin-bottom: 5%;
@@ -604,23 +616,22 @@ footer  h3{
     }
 
 /* Media queries desktop header  */
-    header , .photologo {
-        font-size: 100%;
-    }
     .headerdiv {
-        margin-bottom: 0%;
+        margin-bottom: 5%;
     }
     .photologo {
-        width: 7%;
+        width: 8%;
     }
     .sinscrire {
         width: 5%;
+        font-size: 14px;
     }
     .liensnav { 
         width: 70%;
     }
     .hebergements , .activites {
         margin-left: 10%;
+        font-size: 14px;
     }
 /* Media queries desktop section recherche */
     .sectionrecherche {
@@ -628,22 +639,27 @@ footer  h3{
         margin-bottom: 2%;
     }
     .sectionrecherche h1  {
-        font-size: 150%;
         margin:0;
+        font-size: 16px;
     }
     .sectionrecherche p {
         line-height: 2rem;
         margin:0%;
-        font-size: 100%;
+        font-size: 13px;
     }
     .sectionrecherche form {
-        width:40%;
+        width:30%;
         margin: 0%;
         margin-bottom: 2%;
         margin-top: 1%;
     }
+    .sectionrecherche input {
+        font-size: 14px;
+    }
     .locate {
-        font-size: 100%;
+        font-size: 14px;
+        padding: 3%;
+        font-size: 12px;
     }
     .search {
         border-radius: 0% 15% 15% 0%;
@@ -652,6 +668,8 @@ footer  h3{
         padding-left: 3%;
         padding-right: 3%;
         left:0;
+        font-weight: bold;
+        font-size: 12px;
     } 
     .search i {
         display: none;
@@ -672,30 +690,33 @@ footer  h3{
         margin-top: 0%;
         margin-bottom: 0%;
         margin-left: 0%;
-        margin-right: 1%;
-        font-size: 100%;
+        margin-right: 2%;
+        font-size: 14px;
     }
      .select {
+        padding-right:2%;
         margin-right: 2%;
         margin-bottom: 0%;
-        padding-right:2%;
-        font-size: 100%;
+        font-size: 14px;
+    }
+    .select i {
+        padding: 4PX 3PX 0PX 3PX;
+        font-size: 16px;
     }
      .info {
         margin-top: 1%;
         margin-bottom: 2%;
     }
      .info i {
-        font-size: 50%;
         padding: 0.5%;
+        font-size: 7px;
     }
      .info p {
-        font-size: 80%;
         margin-left: 1%;
+        font-size: 12px;
     }
 
 /* Media queries desktop section hebergement */
-
     .desktopaside {
         display: flex;    
     }
@@ -705,6 +726,8 @@ footer  h3{
     }
     #sectionhotelmarseille {
         order: 1;
+        width:70%;
+        align-content: space-between;
         background-color: #F2F2F2;
         border-radius: 30px;
         padding: 2% 2% 0% 2%;
@@ -712,85 +735,104 @@ footer  h3{
     }  
     .sectionhotelpopulaire {        
         order: 2;
+        width: 30%;
+        align-content: space-between;
         float: right;
         border-radius: 30px;
         padding: 2%;
         margin-top: 0;
-        margin-left: 5%;
+        margin-left: 3%;
         margin-right: 2%;
+    }
+    .conteneurhotelmarseille {
+        height: 65%;
+        margin-bottom: 5%;
+        align-content: space-between;
     }
     .conteneurpopulaire {
         width: 100%;
-        padding-bottom: 0.3%;
+        padding : 1% 1% 0.3% 1%;
         margin-bottom: 4%;
-        margin-top: 3%;
+        margin-top: 5%;
     }
     .conteneurmarseille  {
         padding: 0.5%;
         margin-bottom: 3%;
-        margin-top: 3%;
+        margin-top: 0%;
     }
     #sectionhotelmarseille h2  {
         margin-top: 1%;
         margin-bottom: 1%;
         margin-left: 1%;
-        font-size: 150%;
+        font-size: 18px;
     }
     .sectionhotelpopulaire h2 {
-        margin-bottom: 6%;
+        margin-bottom: 10%;
+        font-size: 18px;
     }
     .conteneurpopulaire h4 {
         margin-left: 30%;
         margin-top: 15%;
-        font-size: 90%;
     }
     #sectionhotelmarseille h5 {
-        margin-top: 3%;
-        margin-left: 2%;
-        font-size: smaller;
+        width: 100%;
+        margin-top: 2%;
+        margin-left: 15%;
     }
     .texthotel h4 {
         margin-left:3%;
         margin-top: 0%;
+        font-size: 13px;
     }
     .conteneurpopulaire img {
-        width: 35%;
+        width: 110px;
         height: 120px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 20px;   
     }
+    .photohotelmarseille {
+        height: 100px;
+    }
     .conteneurpopulaire .texthotel {
-        width:50%;
-        height: 90%;
+        width: 55%;
+        height: 95%;
         float: right;
         display: flex;
-        font-size: 100%;
+        justify-content: space-between;
+        padding: 2% 2% 0% 0%;
+        margin-left: 0%;
+        font-size: 18px;
+    }
+    .conteneurmarseille .texthotel {
+        width: 100%;
+        display: inline-block;
+        flex-flow: wrap;
+        align-content: space-between;
+    }
+    .conteneurmarseille .text {
+        width: 100%;
     }
     .conteneurpopulaire .staricones {
         margin-bottom: 10%;
-    }
-    .photohotelmarseille {
-        height: 100px;
     }
 
 /* Media queries desktop section activites */
     #sectionactivites {
         padding :0;
     }
-    #sectionactivites h2 {
-        margin-left: 1%;
-        margin-bottom: 2%;
-    }
     .conteneuractivitesmarseille {
         display: flex;
         flex-wrap: nowrap;
     }
+    .conteneuractivites {
+        padding-bottom: 2%;
+    }
     .bigphoto {   
         width: 25%;
-        height: 100%;
+        height: 104%;
         padding:0;
         margin-bottom: 0;
-        margin-right: 4%;
+        margin-right: 3%;
     } 
     .conteneursmallphoto {
         width: 25%;
@@ -802,8 +844,29 @@ footer  h3{
         height:100%;
         padding-left: 0%;
     } 
-    .photoactivites {
-        height: 150px;
+    .bigphoto .photoactivites {
+        height: 88%;
+        padding-bottom: 0%;
+    }
+    .smallphoto .photoactivites {
+        height: 120px;
+    }
+    .conteneursmallphoto h4 , .bigphoto h4  {
+        padding-bottom: 1%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 13px;
+    }
+    .bigphoto h4 {
+        margin-top: 4%;
+    }
+    .conteneursmallphoto h4 {
+        height: 40%;
+    }
+    #sectionactivites h2 {
+        margin-left: 1%;
+        margin-bottom: 2%;
+        margin-top: 4%;
     }
 
 /* Media queries desktop footer */
@@ -815,8 +878,13 @@ footer  h3{
     .conteneurfooter {
         margin-top: 0;
     }
+    footer h3 {
+        font-size: 16px;
+    }
     .footertext {
-        margin-right: 15%;
+        margin-right: 13%;
+        margin-top: 2%;
+        font-size: 11px;
     }    
 }
     
