@@ -667,7 +667,6 @@ footer  h3{
         padding: 0%;
         padding-left: 3%;
         padding-right: 3%;
-        left:0;
         font-weight: bold;
         font-size: 12px;
     } 
@@ -700,7 +699,7 @@ footer  h3{
         font-size: 14px;
     }
     .select i {
-        padding: 4PX 3PX 0PX 3PX;
+        padding: 7PX 7PX 0PX 7PX;
         font-size: 16px;
     }
      .info {
@@ -751,6 +750,7 @@ footer  h3{
     }
     .conteneurpopulaire {
         width: 100%;
+        display: flex;
         padding : 1% 1% 0.3% 1%;
         margin-bottom: 4%;
         margin-top: 5%;
@@ -794,13 +794,12 @@ footer  h3{
         height: 100px;
     }
     .conteneurpopulaire .texthotel {
-        width: 55%;
         height: 95%;
         float: right;
         display: flex;
         justify-content: space-between;
         padding: 2% 2% 0% 0%;
-        margin-left: 0%;
+        margin-left: 4%;
         font-size: 18px;
     }
     .conteneurmarseille .texthotel {
@@ -812,8 +811,11 @@ footer  h3{
     .conteneurmarseille .text {
         width: 100%;
     }
+    .staricones {
+        font-size: 11px;
+    }
     .conteneurpopulaire .staricones {
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
 /* Media queries desktop section activites */
@@ -845,7 +847,7 @@ footer  h3{
         padding-left: 0%;
     } 
     .bigphoto .photoactivites {
-        height: 88%;
+        height: 87%;
         padding-bottom: 0%;
     }
     .smallphoto .photoactivites {
@@ -879,12 +881,12 @@ footer  h3{
         margin-top: 0;
     }
     footer h3 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .footertext {
         margin-right: 13%;
         margin-top: 2%;
-        font-size: 11px;
+        font-size: 10px;
     }    
 }
     
