@@ -81,44 +81,61 @@ a:visited , a:link  {
     font-size: 22px;
 }
 .sectionrecherche form{
-    width: 70%;
+    height:auto;
     display: flex;
-    align-content: space-between;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5rem;
 }
 .sectionrecherche input {
+    height: 50px;
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
     border: solid;
     border-color: #F2F2F2;
-    padding-left: 5%;
     font-weight: bold;
     font-size: 18px;
-    position: static;
+    position: relative; 
+    left: 1rem;
+    z-index: 1;
+    padding-left: 7%;
+
 }
 .locate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 42px;
     border:solid;
     border-width: 0.3em;
     border-color: #F2F2F2;
     background-color: #F2F2F2;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
-    padding: 4%;
-    position: relative;  
+    position: absolute; 
+    left: .5rem;
+    z-index: 2;
 }
 .locate i {
     font-size: 18px;
 }
 .search {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height:50px;
     border:solid;
     border-width: 0.2em;
     border-color: #0065FC;
     background-color:#0065FC;
     border-radius: 30%;
-    padding: 4%;
     margin-right: 5%;
-    position: relative;  
-    top: 1px; 
-    left: -20px;
+    position: absolute;  
+    left: 20rem;
+    z-index: 2;
 }
 .search i {
     font-size: 18px;
@@ -379,7 +396,7 @@ footer  h3{
         display: inline;
         align-content: flex-end;
         justify-items: center;
-        width: 50%;
+        width: 60%;
         font-size: 18px;
     }
     .liensnav a:hover, .liensnav a:active {
@@ -394,18 +411,14 @@ footer  h3{
         justify-content: center;
         align-items: center; 
         font-size: 18px;
-        padding: 0;  
     }
     .hebergements , .activites {
         width: 10%;
         display: inline;
         border-bottom: none;
         padding: 0;
-        padding-right: 2%;
-        padding-left: 2%;
         padding-top: 4%;
         margin: 0;
-        margin-left: 5%;
         font-size: 18px;
     }
     .hebergements a:hover , .activites a:hover , .hebergements a:active , .activites a:active {
@@ -419,20 +432,24 @@ footer  h3{
         line-height: 1em;
     }
     .sectionrecherche form {
-        width:60%;
         margin: 0%;
         margin-bottom: 3%;
     }
+    .sectionrecherche input {
+        padding-left: 5%;
+    }
     .locate {
+        height: 40px;
         font-size: 18px;
     }
     .search {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 50px;
         border-radius: 0% 15% 15% 0%;
         font-weight: bold;
-        padding: 0%;
-        padding-left: 3%;
-        padding-right: 3%;
-        left:0;
     } 
     .search i {
         display: none;
@@ -443,6 +460,9 @@ footer  h3{
     }
 
  /* Media queries tablettes section filtres */
+ .sectionfiltres {
+     margin-top: 15%;
+ }
     .sectionfiltres h2, .sectionrecherche p , .sectionrecherche h1{
         margin-left:0;
     }
@@ -627,7 +647,7 @@ footer  h3{
         width: 70%;
     }
     .hebergements , .activites {
-        margin-left: 10%;
+        margin-left: 6%;
         font-size: 14px;
     }
 /* Media queries desktop section recherche */
@@ -653,11 +673,7 @@ footer  h3{
     .sectionrecherche input {
         font-size: 14px;
     }
-    .locate {
-        font-size: 14px;
-        padding: 3%;
-        font-size: 12px;
-    }
+  
     .search {
         border-radius: 0% 15% 15% 0%;
         font-weight: bold;
@@ -679,7 +695,7 @@ footer  h3{
     .sectionfiltres {
         align-items: center; 
         margin-bottom: 0%;
-        margin-top: 0%;
+        margin-top: 10%;
     }
     .sectionfiltres h2 {
         width: auto;
