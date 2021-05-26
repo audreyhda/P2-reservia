@@ -671,9 +671,13 @@ footer  h3{
         margin-top: 1%;
     }
     .sectionrecherche input {
-        font-size: 14px;
+        font-size: 14px; 
+        padding-left: 12%;
+
     }
-  
+    .locate {
+        left: 46px;
+    }
     .search {
         border-radius: 0% 15% 15% 0%;
         font-weight: bold;
