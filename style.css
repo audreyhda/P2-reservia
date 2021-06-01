@@ -88,7 +88,7 @@ a:visited , a:link  {
 }
 .sectionrecherche input {
     height: 50px;
-    width: 300px;
+    width: 240px;
     display:flex;
     justify-content: center;
     align-content: center;
@@ -100,7 +100,6 @@ a:visited , a:link  {
     left: 1rem;
     z-index: 1;
     padding-left: 7%;
-
 }
 .locate {
     display: flex;
@@ -134,7 +133,7 @@ a:visited , a:link  {
     border-radius: 30%;
     margin-right: 5%;
     position: absolute;  
-    left: 20rem;
+    left: 16.5rem;
     z-index: 2;
 }
 .search i {
@@ -411,6 +410,7 @@ footer  h3{
         justify-content: center;
         align-items: center; 
         font-size: 18px;
+        padding:0;
     }
     .hebergements , .activites {
         width: 10%;
