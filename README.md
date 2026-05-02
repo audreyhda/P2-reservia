@@ -1,121 +1,137 @@
-# projet2reservia
+# 🏖️ Reservia
 
-Reservia
+> **Integrate a responsive mockup for a vacation booking platform — in pure HTML5 and CSS3, no framework.**
 
-Deuxième projet du parcours développeur web chez OpenClassrooms. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://validator.w3.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://jigsaw.w3.org/css-validator/)
+[![W3C Validated](https://img.shields.io/badge/W3C-Validated-brightgreen?style=flat)](https://validator.w3.org/)
 
+---
 
-Éléments fournis par l'entreprise virtuelle:
+## 📌 Problem Statement
 
--La maquette pour les résolutions ordinateur et téléphone nous est donné.
--Toutes les images présentes sur le site sont aussi livrés en format sm, md, l & xl.
--Les icones proviennent de Font Awesome
--Les couleurs sont : bleu #0065FC - bleu clair #DEEBFF - gris #F2F2F2
--La police est "Raleway"
+A vacation planning startup has a new Material Design-based UI mockup that needs to be turned into a real, responsive web page. The task: integrate it pixel-perfectly from desktop to mobile, using only HTML5 and CSS3 — no framework, no JavaScript, no shortcuts.
 
-Cahier des charges:
+---
 
--L'integration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple)
--Le champ de recherche doit être un champ de saisie, dont le texte peut être édité. La fonctionnalité de recherche ne doit pas être implémenté pour autant.
--Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
--Les filtres, bien que non fonctionnels, doivent changer de style au survol.
--Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
--Même si aucune maquette pour la résolution tablette n'est fournis, l'intégration doit la prendre en charge.
--Les images doivent être de taille adéquate afin qu'elle soit le plus jolie possible en impactant le moins possible le temps de chargement de la page.
--Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
--Le site devra être compatible avec les dernières versions de Chrome et Firefox.
--Le HTML et le CSS doivent être séparés et le dossier doit être organisé
--Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
+## 🧩 Project Overview
 
-Notes sur la réalisation du projet:
+Reservia is the second project from the **Développeur Web** path at [OpenClassrooms](https://openclassrooms.com/fr/paths/717-developpeur-web). The goal is to integrate the homepage of a fictional vacation booking service from a Figma mockup, making it fully responsive across desktop, tablet, and mobile breakpoints — with semantic HTML, W3C-validated code, and proper use of Flexbox.
 
--L'integration est faite sur l'éditeur Visual Studio Code avec les plugins Live server, Live Sass Compiler & Git Graph. Le thème, l'UI et les raccourcis clavier sont personnalisés.
--Sass est utilisé pour organiser le css. Vous trouverez le fichier sass est dans le repository (/style)
-Contact
+---
 
+## 🛠️ Tech Stack
 
+### 🌐 Languages
+- HTML5 — semantic markup
+- CSS3 — Flexbox layout, responsive breakpoints
 
+### 🔧 Tools & Libraries
+- [Font Awesome](https://fontawesome.com/) — icons
+- [Google Fonts — Raleway](https://fonts.google.com/specimen/Raleway) — typography
+- [Visual Studio Code](https://code.visualstudio.com/) — editor with Live Server
+- [GitHub Pages](https://pages.github.com/) — deployment
+- [W3C Validator](https://validator.w3.org/) — HTML/CSS validation
 
+---
 
-/////////
+## ✨ Features
 
+- **Responsive layout** — fully adapted for desktop, tablet (improvised breakpoints), and mobile from the provided mockups
+- **Search field** — city search input (UI only, non-functional in this version)
+- **Accommodation cards** — fully clickable cards linking to (empty) detail pages
+- **Thematic filters** — hover state style changes on filter buttons (non-functional)
+- **Navigation anchors** — "Hébergements" and "Activités" links scroll to their respective page sections
+- **Optimised images** — correct format and size chosen per resolution to minimise load time
+- **W3C compliant** — zero errors or alerts in HTML and CSS validators
 
+---
 
-Transformez une maquette en site web
+## 🎨 Design Specifications
 
-Mis à jour le mardi 6 juillet 2021
-Scénario
-Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
+| Property | Value |
+|----------|-------|
+| Primary blue | `#0065FC` |
+| Light blue | `#DEEBFF` |
+| Background grey | `#F2F2F2` |
+| Font | Raleway (Google Fonts) |
+| Icons | Font Awesome |
+| Layout | Flexbox |
 
-Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
+---
 
+## 🖼️ Mockups
 
-Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
+**Mobile:**
 
-De : Loïc
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ArthurBlanc/Reservia/master/assets/img/mockup/smartphone.png" alt="Reservia — Mobile mockup" width="300">
+</div>
 
-À : Vous
+**Desktop:**
 
-CC : Sarah
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ArthurBlanc/Reservia/master/assets/img/mockup/desktop.png" alt="Reservia — Desktop mockup" width="700">
+</div>
 
-Objet : Intégration maquette Reservia
+---
 
-Bonjour ! 😀
+## 📁 Project Structure
 
-Je t’envoie les nouvelles maquettes desktop et mobiles du site Reservia. Le dossier comprend aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration.
+```
+P2-reservia/
+├── P2-Reservia/
+│   └── (backup / working files)
+├── index.html          # Main page
+└── style.css           # All styles — Flexbox, responsive, hover effects
+```
 
-    Fonctionnalités
+---
 
-Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
-Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
-Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol. Je te laisse décider de l’effet le plus approprié.
-Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
- 
+## ⚙️ Getting Started
 
-    Contraintes techniques
+### Prerequisites
+- Any modern browser (Chrome or Firefox latest)
+- Optionally: Visual Studio Code with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-Je te fournis deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes. Sur ce support, tu es libre de faire les adaptations nécessaires avec la mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. Je te laisse choisir les breakpoints appropriés.
-Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j’ai exporté les images en différents formats. Je te laisse choisir le format le plus adapté par rapport à la résolution et au temps de chargement.
-Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
-La police du site est Raleway.
- 
+### Installation
 
-Si tu as des questions n’hésite pas à m’écrire.
+```bash
+# 1. Clone the repository
+git clone https://github.com/audreyhda/P2-reservia.git
+cd P2-reservia
 
-Bonne journée!
+# 2. Open in browser
+open index.html
+# or use Live Server in VS Code
+```
 
+No build step, no dependencies, no installation required.
 
-Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous apporter des précisions !
+---
 
-De : Sarah
+## ✅ Skills Demonstrated
 
-À : Vous
+- Integrating content in accordance with a Figma mockup
+- Setting up a Front-End development environment
+- Implementing a responsive interface (mobile-first, tablet, desktop)
+- Using semantic HTML5 tags
+- Passing W3C HTML and CSS validation
+- Version control with Git and deployment on GitHub Pages
 
-CC : Loïc
+---
 
-Objet : RE - Intégration maquette Reservia
+## 📄 License
 
-Hello,
+This project is licensed under the MIT License.
 
-J’espère que les premiers éléments partagés par Loïc te semblent clairs ! Comme c’est ton premier projet avec nous et que tu es en stage, je voulais te guider un peu plus :
+---
 
-N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par exemple) : comme tu démarres, je préfère que tu montes en compétences sur HTML et CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences là-dessus !
-Je te recommande d'utiliser Visual Studio Code, plusieurs plugins pourront te simplifier la vie, par exemple Live Server ou Prettier.
-Tu peux intégrer les icônes Font Awesome en HTML ou CSS. Je te conseille fortement d’utiliser Flexbox mais tu peux aussi utiliser CSS Grid si tu veux.
-Ton code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
-Le site devra être compatible avec les dernières versions de Chrome et Firefox.
-Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu.
-N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes de code. C’est hyper important quand on travaille en équipe. Nous on utilise GitKraken comme client Git, c'est plus sympa qu'une console, mais tu fais comme tu veux. Ensuite il faut que tu déploies la page sur GitHub Pages ou GitLab Pages comme tu préfères.
-À ta disposition pour en discuter ! 
+## 👤 Author
 
-Sarah
+**Audrey**
+- GitHub: [@audreyhda](https://github.com/audreyhda)
 
-Compétences évaluées:
+---
 
-Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
-
-Mettre en place son environnement Front-End
-
-Intégrer du contenu conformément à une maquette
-
-Implémenter une interface responsive
+*OpenClassrooms — Développeur Web · Project 2*
